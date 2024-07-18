@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .game-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .game-info h2 {
+            color: #333;
+        }
+
+        .game-info p {
+            color: #666;
+        }
+        button{
+            background-color: green;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Game 3">
+    </div>
+    <div>
+          <button><a href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&pcampaignid=web_share">INSTALL</a></button>
+
+    </div>
+    <h1>SHADOW FIGHT</h1>
+    <p>Shadow Fight is a nail-biting mix of RPG and classical Fighting.</p>
+
+    <div class="game-info">
+        <h2>SHADOW FIGHT</h2>
+        <p>Shadow Fight is a nail-biting mix of RPG and classical Fighting.</p>
+
+        <h2>Features</h2>
+        <p>
+            ► Play a brand new 2v2 game mode. Play classic 4 player Carrom matches with your family and friends<br>
+            ► Enjoy voice and video chat while playing a match. This feature is accessible to Carrom Pass owners only<br>
+            ► Try your luck at opening the lucky box. Get a free attempt on a daily basis and see how many free rewards you can unlock.<br>
+            ► Weekly new time-limited events that will keep you hooked. Play more to win more.<br>
+            ► Spin the wheel and unlock premium strikers, pucks and much more<br>
+            ►Play multiplayer matches in 3 game modes: Carrom, Free Style and Disc Pool .<br>
+            ►Play with your friends .<br>
+            ►Compete with top players.<br>
+            ►Try your luck at free daily golden shot and win big prizes.<br>
+            ►Play around the world in glorious arenas .<br>
+            ► Smooth controls and realistic physics.<br>
+            ►Unlock a wide range of strikers and pucks.<br>
+            ►Win free victory chests with exciting rewards.<br>
+            ►Upgrade your strikers and unleash frenzy.<br>
+            ►Supports offline play .<br>
+        <h2>System Requirements</h2>
+        <p>Minimum Requirements:</p>
+        <ul>
+            <li>Operating System: Windows 10</li>
+            <li>Processor: Intel Core i5</li>
+            <li>Memory: 8 GB RAM</li>
+            <li>Graphics: NVIDIA GeForce GTX 1060</li>
+            <li>Storage: 50 GB available space</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

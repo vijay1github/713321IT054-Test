@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .game-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .game-info h2 {
+            color: #333;
+        }
+
+        .game-info p {
+            color: #666;
+        }
+        button{
+            background-color: green;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Game 3">
+    </div>
+    <div>
+       <button ><a href="https://play.google.com/store/apps/details?id=com.CodeThisLab.MasterChessMultiplayer&pcampaignid=web_share">INSTALL</a></button>
+    <h1>MASTER CHESS</h1>
+    <p>Have fun playing the two player and multiplayer puzzle board Chess game!</p>
+
+    <div class="game-info">
+        
+
+        </div>
+        <h2>MASTER CHESS</h2>
+        <p>Have fun playing the two player and multiplayer puzzle board Chess game!</p>
+
+        <h2>Features</h2>
+        <p>
+            ► Play a brand new 2v2 game mode. Play classic 4 player Carrom matches with your family and friends<br>
+            ► Enjoy voice and video chat while playing a match. This feature is accessible to Carrom Pass owners only<br>
+            ► Try your luck at opening the lucky box. Get a free attempt on a daily basis and see how many free rewards you can unlock.<br>
+            ► Weekly new time-limited events that will keep you hooked. Play more to win more.<br>
+            ► Spin the wheel and unlock premium strikers, pucks and much more<br>
+            ►Play multiplayer matches in 3 game modes: Carrom, Free Style and Disc Pool .<br>
+            ►Play with your friends .<br>
+            ►Compete with top players.<br>
+            ►Try your luck at free daily golden shot and win big prizes.<br>
+            ►Play around the world in glorious arenas .<br>
+            ► Smooth controls and realistic physics.<br>
+            ►Unlock a wide range of strikers and pucks.<br>
+            ►Win free victory chests with exciting rewards.<br>
+            ►Upgrade your strikers and unleash frenzy.<br>
+            ►Supports offline play .<br>
+        <h2>System Requirements</h2>
+        <p>Minimum Requirements:</p>
+        <ul>
+            <li>Operating System: Windows 10</li>
+            <li>Processor: Intel Core i5</li>
+            <li>Memory: 8 GB RAM</li>
+            <li>Graphics: NVIDIA GeForce GTX 1060</li>
+            <li>Storage: 50 GB available space</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

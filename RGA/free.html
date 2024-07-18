@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .game-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .game-info h2 {
+            color: #333;
+        }
+
+        .game-info p {
+            color: #666;
+        }
+        button{
+            background-color: green;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Game 2">
+    </div>
+    <div>
+        <button><a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax&pcampaignid=web_share">INSTALL</a></button>
+    </div>
+
+    <h1>FREE FIRE</h1>
+    <p>The fierce Mechadrake has invaded our home, taking over Battle Royale and Clash Squad modes.</p>
+
+    <div class="game-info">
+        <h2>FREE FIRE</h2>
+        <p>The fierce Mechadrake has invaded our home, taking over Battle Royale and Clash Squad modes.</p>
+
+        <h2>Features</h2>
+        <p>
+            ► Play a brand new 2v2 game mode. Play classic 4 player Carrom matches with your family and friends<br>
+            ► Enjoy voice and video chat while playing a match. This feature is accessible to Carrom Pass owners only<br>
+            ► Try your luck at opening the lucky box. Get a free attempt on a daily basis and see how many free rewards you can unlock.<br>
+            ► Weekly new time-limited events that will keep you hooked. Play more to win more.<br>
+            ► Spin the wheel and unlock premium strikers, pucks and much more<br>
+            ►Play multiplayer matches in 3 game modes: Carrom, Free Style and Disc Pool .<br>
+            ►Play with your friends .<br>
+            ►Compete with top players.<br>
+            ►Try your luck at free daily golden shot and win big prizes.<br>
+            ►Play around the world in glorious arenas .<br>
+            ► Smooth controls and realistic physics.<br>
+            ►Unlock a wide range of strikers and pucks.<br>
+            ►Win free victory chests with exciting rewards.<br>
+            ►Upgrade your strikers and unleash frenzy.<br>
+            ►Supports offline play .<br>
+        <h2>System Requirements</h2>
+        <p>Minimum Requirements:</p>
+        <ul>
+            <li>Operating System: Windows 10</li>
+            <li>Processor: Intel Core i5</li>
+            <li>Memory: 8 GB RAM</li>
+            <li>Graphics: NVIDIA GeForce GTX 1060</li>
+            <li>Storage: 50 GB available space</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

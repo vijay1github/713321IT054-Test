@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .game-info {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .game-info h2 {
+            color: #333;
+        }
+
+        .game-info p {
+            color: #666;
+        }
+        button{
+            background-color: green;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <img src="data:image/png;base64,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" class="card-img-top" alt="Game 3">
+    </div>
+    <div>
+        <button><a href="https://play.google.com/store/apps/details?id=com.miniclip.carrom&pcampaignid=web_share">INSTALL</a></button>
+
+    </div>
+    <h1>CARROM BOARD</h1>
+    <p>Carrom Pool is a physics based online game that can be played</p>
+
+    <div class="game-info">
+        <h2>CARROM BOARD</h2>
+        <p>Carrom Pool is a physics based online game that can be played</p>
+
+        <h2>Features</h2>
+        <p>
+► Play a brand new 2v2 game mode. Play classic 4 player Carrom matches with your family and friends<br>
+► Enjoy voice and video chat while playing a match. This feature is accessible to Carrom Pass owners only<br>
+► Try your luck at opening the lucky box. Get a free attempt on a daily basis and see how many free rewards you can unlock.<br>
+► Weekly new time-limited events that will keep you hooked. Play more to win more.<br>
+► Spin the wheel and unlock premium strikers, pucks and much more<br>
+►Play multiplayer matches in 3 game modes: Carrom, Free Style and Disc Pool .<br>
+►Play with your friends .<br>
+►Compete with top players.<br>
+►Try your luck at free daily golden shot and win big prizes.<br>
+►Play around the world in glorious arenas .<br>
+► Smooth controls and realistic physics.<br>
+►Unlock a wide range of strikers and pucks.<br>
+►Win free victory chests with exciting rewards.<br>
+►Upgrade your strikers and unleash frenzy.<br>
+►Supports offline play .<br>
+
+
+        </p>
+
+        <h2>System Requirements</h2>
+        <p>Minimum Requirements:</p>
+        <ul>
+            <li>Operating System: Windows 10</li>
+            <li>Processor: Intel Core i5</li>
+            <li>Memory: 8 GB RAM</li>
+            <li>Graphics: NVIDIA GeForce GTX 1060</li>
+            <li>Storage: 50 GB available space</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
